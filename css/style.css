@@ -1,12 +1,12 @@
 
 @media (min-width: 400px) {
     body{font-size:8px;}
-    .label-nyolcad {font-size: 8px;    }
+    .label-nyolcad {font-size: 6px;    }
 }
 
 @media (min-width: 800px) {
     body{font-size: 12px;}
-    .label-nyolcad {font-size: 12px;}
+    .label-nyolcad {font-size: 10px;}
     .form-control {font-size: 12px}
 }
 @media (min-width: 1000px) {
@@ -31,7 +31,7 @@ nav {
 }
 
 .auto-style1 { /* hosszú oszlopok*/
-    width: 9%;
+    min-width: 9%;
     background-color:beige;
 }
 .points { /*kicsi, a pontoknak*/
@@ -89,8 +89,7 @@ nav {
 .label-nyolcad {
     float: right;
     background-color: blue;
-    padding: 1em 3em 1em;
-    padding: 3px 3px;
+    padding: 1px 1px;
 }
 .seli {
     color: #fff;
