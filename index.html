@@ -15,12 +15,12 @@
 
 <body>
     <nav class="navbar navbar-light bg-light navbar-fixed-top">
-            <button class="btn btn-info navbar-btn">Tippszelvény</button>
-            <button class="btn btn-danger navbar-btn">Visszatekintő</button>
-            <button class="btn btn-success navbar-btn">Ponttáblázat</button>
-            <button class="btn btn-outline-success">Segítség</button>
+        <button class="btn btn-info navbar-btn">Tippszelvény</button>
+        <button class="btn btn-danger navbar-btn">Visszatekintő</button>
+        <button class="btn btn-success navbar-btn">Ponttáblázat</button>
+        <button class="btn btn-outline-success">Segítség</button>
     </nav>
-    <div class="container-fluid" id="tippsz">   
+    <div class="container-fluid" id="tippsz">
         <table class="table">
             <tr>
                 <td class="group_title one">"A"</td>
@@ -75,10 +75,11 @@
                     <img src="img/2-2-arrow-png-pic.png" style="display:block; width:100%; height:20px;" />
                 </td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
                 </td>
                 <td class="points"><span class="label label-default">2</span></td>
                 <td class="arrows" rowspan="4">
@@ -91,10 +92,11 @@
                 <td class="points"><span class="label label-default"></span></td>
                 <td class="arrows"></td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
                 </td>
                 <td class="points"></td>
                 <td class="arrows"></td>
@@ -155,10 +157,11 @@
                 </td>
 
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
                 </td>
                 <td class="points"><span class="label label-default">2</span></td>
                 <td class="auto-style1"></td>
@@ -177,10 +180,10 @@
                 <td class="auto-style1">
                     <select class="form-control seli" id="sel_b1">
                         <option>Válassz...</option>
-                        <option value="1">Dánia</option>
-                        <option value="2">Finnország</option>
-                        <option value="3">Belgium</option>
-                        <option value="4">Oroszország</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
                     </select>
                 </td>
                 <td class="points"></td>
@@ -192,10 +195,11 @@
                 <td class="auto-style1"></td>
                 <td class="points"></td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
                 </td>
                 <td class="points"><span class="label label-default">4</span></td>
                 <td class="arrows"></td>
@@ -210,12 +214,12 @@
                 <td class="csapatok">Finnország</td>
                 <td class="points"><span class="label label-default">2.</span></td>
                 <td class="auto-style1">
-                    <select class="form-control seli" id="sel_b2">
+                    <select class="form-control seli" id="sel_b1">
                         <option>Válassz...</option>
-                        <option value="1">Dánia</option>
-                        <option value="2">Finnország</option>
-                        <option value="3">Belgium</option>
-                        <option value="4">Oroszország</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
                     </select>
                 </td>
                 <td class="points"></td>
@@ -241,16 +245,13 @@
                 <td class="csapatok">Belgium</td>
                 <td class="points"><span class="label label-default">3.</span></td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Dánia</a></li>
-                            <li><a href="#">Finnország</a></li>
-                            <li><a href="#">Belgium</a></li>
-                            <li><a href="#">Oroszország</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
                 <td class="points"><input type="checkbox" class="form-check-input" value=""></td>
                 <td class="points"><span class="label label-default">2</span></td>
@@ -262,12 +263,14 @@
                 <td class="points"></td>
                 <td class="arrows" rowspan="4">
                     <img src="img/2-2-arrow-png-pic.png"
-                        style="display:block; width:100%; height:20px; transform:rotate(-60deg)" /></td>
+                        style="display:block; width:100%; height:20px; transform:rotate(-60deg)" />
+                </td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
                 </td>
                 <td class="points"><span class="label label-default">4</span></td>
                 <td class="arrows"></td>
@@ -282,16 +285,13 @@
                 <td class="csapatok line">Oroszország</td>
                 <td class="points line"><span class="label label-default">4.</span></td>
                 <td class="auto-style1 line">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Dánia</a></li>
-                            <li><a href="#">Finnország</a></li>
-                            <li><a href="#">Belgium</a></li>
-                            <li><a href="#">Oroszország</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
                 <td class="points line"></td>
                 <td class="points line"><span class="label label-default">2</span></td>
@@ -302,10 +302,11 @@
                     <img src="img/2-2-arrow-png-pic.png" style="display:block; width:100%; height:20px;" />
                 </td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
                 </td>
                 <td class="points"><span class="label label-default">2</span></td>
                 <td class="auto-style1"></td>
@@ -323,16 +324,13 @@
                 <td class="csapatok one">Hollandia</td>
                 <td class="points one"><span class="label label-default">1.</span></td>
                 <td class="auto-style1 one">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Hollandia</a></li>
-                            <li><a href="#">Ukrajna</a></li>
-                            <li><a href="#">Ausztria</a></li>
-                            <li><a href="#">Koszovó</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
                 <td class="points one"></td>
                 <td class="points one"><span class="label label-default">2</span></td>
@@ -358,16 +356,13 @@
                 <td class="csapatok one">Ukrajna</td>
                 <td class="points one"><span class="label label-default">2.</span></td>
                 <td class="auto-style1 one">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Hollandia</a></li>
-                            <li><a href="#">Ukrajna</a></li>
-                            <li><a href="#">Ausztria</a></li>
-                            <li><a href="#">Koszovó</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
                 <td class="points one"></td>
                 <td class="points one"><span class="label label-default">2</span></td>
@@ -378,12 +373,12 @@
                     <img src="img/2-2-arrow-png-pic.png" style="display:block; width:100%; height:20px;" />
                 </td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
                 </td>
-
                 <td class="points"><span class="label label-default">0</span></td>
                 <td class="auto-style1"></td>
                 <td class="points"></td>
@@ -398,16 +393,13 @@
                 <td class="csapatok one">Ausztria</td>
                 <td class="points one"><span class="label label-default">3.</span></td>
                 <td class="auto-style1 one">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Hollandia</a></li>
-                            <li><a href="#">Ukrajna</a></li>
-                            <li><a href="#">Ausztria</a></li>
-                            <li><a href="#">Koszovó</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
                 <td class="points one"><input type="checkbox" class="form-check-input" value=""></td>
                 <td class="points one"><span class="label label-default">2</span></td>
@@ -427,23 +419,20 @@
                 <td class="points">&nbsp;</td>
             </tr>
             <tr>
-                <td class="group_title one">&nbsp;</td>
-                <td class="csapatok one">Koszovó</td>
-                <td class="points one"><span class="label label-default">4.</span></td>
-                <td class="auto-style1 one">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Hollandia</a></li>
-                            <li><a href="#">Ukrajna</a></li>
-                            <li><a href="#">Ausztria</a></li>
-                            <li><a href="#">Koszovó</a></li>
-                        </ul>
-                    </div>
+                <td class="group_title one line"></td>
+                <td class="csapatok one line">Koszovó</td>
+                <td class="points one line"><span class="label label-default">4.</span></td>
+                <td class="auto-style1 one line">
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
-                <td class="points one"></td>
-                <td class="points one"><span class="label label-default">2</span></td>
+                <td class="points one line"></td>
+                <td class="points one line"><span class="label label-default">2</span></td>
                 <td class="nyolcadfelirat"></td>
                 <td class="auto-style1"></td>
                 <td class="points"></td>
@@ -454,22 +443,22 @@
                 <td class="auto-style1">&nbsp;</td>
                 <td class="points">&nbsp;</td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
                 </td>
-
                 <td class="points"><span class="label label-default">5</span></td>
                 <td class="arrows" rowspan="2" style="vertical-align: middle;">
                     <img src="img/2-2-arrow-png-pic.png" style="display:block; width:100%; height:20px;" />
                 </td>
-
-                <td class="auto-style1" rowspan="2">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                    </div>
+                <td class="auto-style1">
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
                 </td>
                 <td class="points"><span class="label label-default">6</span></td>
             </tr>
@@ -478,16 +467,13 @@
                 <td class="csapatok">Anglia</td>
                 <td class="points"><span class="label label-default">1.</span></td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Anglia</a></li>
-                            <li><a href="#">Horvátország</a></li>
-                            <li><a href="#">Norvégia</a></li>
-                            <li><a href="#">Csehország</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
                 <td class="points"></td>
                 <td class="points"><span class="label label-default">2</span></td>
@@ -504,14 +490,13 @@
                     <img src="img/2-2-arrow-png-pic.png"
                         style="display:block; width:100%; height:20px; transform:rotate(-60deg)" />
                 </td>
-
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
                 </td>
-
                 <td class="points"><span class="label label-default">5</span></td>
                 <td class="points"></td>
             </tr>
@@ -520,16 +505,13 @@
                 <td class="csapatok">Horvátország</td>
                 <td class="points"><span class="label label-default">2.</span></td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Anglia</a></li>
-                            <li><a href="#">Horvátország</a></li>
-                            <li><a href="#">Norvégia</a></li>
-                            <li><a href="#">Csehország</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
                 <td class="points"></td>
                 <td class="points"><span class="label label-default">2</span></td>
@@ -553,16 +535,13 @@
                 <td class="csapatok">Norvégia</td>
                 <td class="points"><span class="label label-default">3.</span></td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Anglia</a></li>
-                            <li><a href="#">Horvátország</a></li>
-                            <li><a href="#">Norvégia</a></li>
-                            <li><a href="#">Csehország</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
                 <td class="points"><input type="checkbox" class="form-check-input" value=""></td>
                 <td class="points"><span class="label label-default">2</span></td>
@@ -573,10 +552,11 @@
                         style="display:block; width:100%; height:20px;" />
                 </td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
                 </td>
                 <td class="points"><span class="label label-default">3</span></td>
                 <td class="arrows" rowspan="4">
@@ -592,29 +572,25 @@
                 <td class="points"></td>
             </tr>
             <tr>
-                <td class="group_title"></td>
-                <td class="csapatok">Csehország</td>
-                <td class="points"><span class="label label-default">4.</span></td>
-                <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Anglia</a></li>
-                            <li><a href="#">Horvátország</a></li>
-                            <li><a href="#">Norvégia</a></li>
-                            <li><a href="#">Csehország</a></li>
-                        </ul>
-                    </div>
+                <td class="group_title line"></td>
+                <td class="csapatok line">Csehország</td>
+                <td class="points line"><span class="label label-default">4.</span></td>
+                <td class="auto-style1 line">
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
-                <td class="points"></td>
-                <td class="points"><span class="label label-default">2</span></td>
+                <td class="points line"></td>
+                <td class="points line"><span class="label label-default">2</span></td>
                 <td class="nyolcadfelirat"></td>
                 <td class="auto-style1"></td>
                 <td class="points"></td>
                 <td class="arrows"></td>
-                <td class="auto-style1">
-                </td>
+                <td class="auto-style1"></td>
                 <td class="points"></td>
                 <td class="auto-style1"></td>
                 <td class="points"></td>
@@ -629,16 +605,13 @@
                 <td class="csapatok">Spanyolország</td>
                 <td class="points"><span class="label label-default">1.</span></td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Spanyolország</a></li>
-                            <li><a href="#">Svédország</a></li>
-                            <li><a href="#">Lengyelország</a></li>
-                            <li><a href="#">Bosznia</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
                 <td class="points"></td>
                 <td class="points"><span class="label label-default">1</span></td>
@@ -649,10 +622,11 @@
                         style="display:block; width:100%; height:20px;" />
                 </td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
                 </td>
                 <td class="points"><span class="label label-default">3</span></td>
                 <td class="auto-style1"></td>
@@ -669,16 +643,13 @@
                 <td class="csapatok">Svédország</td>
                 <td class="points"><span class="label label-default">2.</span></td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Spanyolország</a></li>
-                            <li><a href="#">Svédország</a></li>
-                            <li><a href="#">Lengyelország</a></li>
-                            <li><a href="#">Bosznia</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
                 <td class="points"></td>
                 <td class="points"><span class="label label-default">1</span></td>
@@ -689,10 +660,11 @@
                 <td class="auto-style1"></td>
                 <td class="points"></td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
                 </td>
                 <td class="points"><span class="label label-default">4</span></td>
                 <td class="arrows"></td>
@@ -707,16 +679,13 @@
                 <td class="csapatok">Lengyelország</td>
                 <td class="points"><span class="label label-default">3.</span></td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Spanyolország</a></li>
-                            <li><a href="#">Svédország</a></li>
-                            <li><a href="#">Lengyelország</a></li>
-                            <li><a href="#">Bosznia</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
                 <td class="points"><input type="checkbox" class="form-check-input" value=""></td>
                 <td class="points"><span class="label label-default">1</span></td>
@@ -737,23 +706,20 @@
                 <td class="points"></td>
             </tr>
             <tr>
-                <td class="group_title"></td>
-                <td class="csapatok">Bosznia</td>
-                <td class="points"><span class="label label-default">4.</span></td>
-                <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Spanyolország</a></li>
-                            <li><a href="#">Svédország</a></li>
-                            <li><a href="#">Lengyelország</a></li>
-                            <li><a href="#">Bosznia</a></li>
-                        </ul>
-                    </div>
+                <td class="group_title line"></td>
+                <td class="csapatok line">Bosznia</td>
+                <td class="points line"><span class="label label-default">4.</span></td>
+                <td class="auto-style1 line">
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
-                <td class="points"></td>
-                <td class="points"><span class="label label-default">1</span></td>
+                <td class="points line"></td>
+                <td class="points line"><span class="label label-default">1</span></td>
                 <td class="nyolcadfelirat">C1</td>
                 <td class="Runners"></td>
                 <td class="points"><span class="label label-default">2</span></td>
@@ -764,12 +730,12 @@
                     <img src="img/2-2-arrow-png-pic.png"
                         style="display:block; width:100%; height:20px; transform:rotate(-60deg)" />
                 </td>
-
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
                 </td>
                 <td class="points"><span class="label label-default">4</span></td>
                 <td class="arrows"></td>
@@ -784,16 +750,13 @@
                 <td class="csapatok">Magyarország</td>
                 <td class="points"><span class="label label-default">1.</span></td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Magyarország</a></li>
-                            <li><a href="#">Portugália</a></li>
-                            <li><a href="#">Franciaország</a></li>
-                            <li><a href="#">Németország</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
                 <td class="points"></td>
                 <td class="points"><span class="label label-default">1</span></td>
@@ -805,10 +768,11 @@
                         style="display:block; width:100%; height:20px; transform:rotate(0deg)" />
                 </td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
                 </td>
                 <td class="points"></td>
                 <td class="auto-style1"></td>
@@ -825,16 +789,13 @@
                 <td class="csapatok">Portugália</td>
                 <td class="points"><span class="label label-default">2.</span></td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Magyarország</a></li>
-                            <li><a href="#">Portugália</a></li>
-                            <li><a href="#">Franciaország</a></li>
-                            <li><a href="#">Németország</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
                 <td class="points"></td>
                 <td class="points"><span class="label label-default">1</span></td>
@@ -858,16 +819,13 @@
                 <td class="csapatok">Franciaország</td>
                 <td class="points"><span class="label label-default">3.</span></td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Magyarország</a></li>
-                            <li><a href="#">Portugália</a></li>
-                            <li><a href="#">Franciaország</a></li>
-                            <li><a href="#">Németország</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
                 <td class="points"><input type="checkbox" class="form-check-input" value=""></td>
                 <td class="points"><span class="label label-default">1</span></td>
@@ -879,10 +837,11 @@
                         style="display:block; width:100%; height:20px; transform:rotate(0deg)" />
                 </td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
                 </td>
                 <td class="points"></td>
                 <td class="auto-style1"></td>
@@ -899,16 +858,13 @@
                 <td class="csapatok">Németország</td>
                 <td class="points"><span class="label label-default">4.</span></td>
                 <td class="auto-style1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
-                            <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Magyarország</a></li>
-                            <li><a href="#">Portugália</a></li>
-                            <li><a href="#">Franciaország</a></li>
-                            <li><a href="#">Németország</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
                 </td>
                 <td class="points"></td>
                 <td class="points"><span class="label label-default">1</span></td>
