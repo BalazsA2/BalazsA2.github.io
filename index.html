@@ -1,11 +1,937 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-    Belabacsi
+    <nav class="navbar navbar-light bg-light navbar-fixed-top">
+            <button class="btn btn-info navbar-btn">Tippszelvény</button>
+            <button class="btn btn-danger navbar-btn">Visszatekintő</button>
+            <button class="btn btn-success navbar-btn">Ponttáblázat</button>
+            <button class="btn btn-outline-success">Segítség</button>
+    </nav>
+    <div class="container-fluid" id="tippsz">   
+        <table class="table">
+            <tr>
+                <td class="group_title one">"A"</td>
+                <td class="csapatok one">Törökország</td>
+                <td class="points one"><span class="label label-default">1.</span></td>
+                <td class="auto-style1 one">
+                    <select class="form-control seli" id="sel_a1">
+                        <option>Válassz...</option>
+                        <option value="1">Törökország</option>
+                        <option value="2">Olaszország</option>
+                        <option value="3">Wales</option>
+                        <option value="4">Svájc</option>
+                    </select>
+                </td>
+                <td class="points one"></td>
+                <td class="points one"><span class="label label-default">3</span></td>
+                <td class="nyolcadfelirat"><span class="label label-default label-nyolcad">B1</span></td>
+                <td class="Runners"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title one">csoport</td>
+                <td class="csapatok one">Olaszország</td>
+                <td class="points one"><span class="label label-default">2.</span></td>
+                <td class="auto-style1 one">
+                    <select class="form-control seli" id="sel_a2">
+                        <option>Válassz...</option>
+                        <option value="1">Törökország</option>
+                        <option value="2">Olaszország</option>
+                        <option value="3">Wales</option>
+                        <option value="4">Svájc</option>
+                    </select>
+                </td>
+                <td class="points one"></td>
+                <td class="points one"><span class="label label-default">2</span></td>
+                <td class="nyolcadfelirat"><span class="label label-default label-nyolcad">ADEF3</span></td>
+                <td class="Runners"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="arrows top">
+                    <img src="img/2-2-arrow-png-pic.png" style="display:block; width:100%; height:20px;" />
+                </td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                    </div>
+                </td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="arrows" rowspan="4">
+                    <img src="img/2-2-arrow-png-pic.png"
+                        style="display:block; width:100%; height:20px; transform:rotate(60deg)" />
+                </td>
+
+                <td class="auto-style1">
+                </td>
+                <td class="points"><span class="label label-default"></span></td>
+                <td class="arrows"></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                    </div>
+                </td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+
+            </tr>
+            <tr>
+                <td class="group_title one"></td>
+                <td class="csapatok one">Wales</td>
+                <td class="points one"><span class="label label-default">3.</span></td>
+                <td class="auto-style1 one">
+                    <select class="form-control seli" id="sel_a3">
+                        <option>Válassz...</option>
+                        <option value="1">Törökország</option>
+                        <option value="2">Olaszország</option>
+                        <option value="3">Wales</option>
+                        <option value="4">Svájc</option>
+                    </select>
+                </td>
+                <td class="points one"><input type="checkbox" class="form-check-input" value=""></td>
+                <td class="points one"><span class="label label-default">1</span></td>
+                <td class="nyolcadfelirat"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="auto-style1"><span class="label label-default">Elődöntők</span></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title one line"></td>
+                <td class="csapatok one line">Svájc</td>
+                <td class="points one line"><span class="label label-default">4.</span></td>
+                <td class="auto-style1 one line">
+                    <select class="form-control seli" id="sel_a4">
+                        <option>Válassz...</option>
+                        <option value="1">Törökország</option>
+                        <option value="2">Olaszország</option>
+                        <option value="3">Wales</option>
+                        <option value="4">Svájc</option>
+                    </select>
+                </td>
+                <td class="points one line"></td>
+                <td class="points one line"><span class="label label-default">1</span></td>
+                <td class="nyolcadfelirat"><span class="label label-default label-nyolcad">A1</span></td>
+                <td class="Runners"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="arrows bottom">
+                    <img src="img/2-2-arrow-png-pic.png" style="display:block; width:100%; height:20px;" />
+                </td>
+
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                    </div>
+                </td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title">"B"</td>
+                <td class="csapatok">Dánia</td>
+                <td class="points"><span class="label label-default">1.</span></td>
+                <td class="auto-style1">
+                    <select class="form-control seli" id="sel_b1">
+                        <option>Válassz...</option>
+                        <option value="1">Dánia</option>
+                        <option value="2">Finnország</option>
+                        <option value="3">Belgium</option>
+                        <option value="4">Oroszország</option>
+                    </select>
+                </td>
+                <td class="points"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="nyolcadfelirat"><span class="label label-default label-nyolcad">C2</span></td>
+                <td class="Runners"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                    </div>
+                </td>
+                <td class="points"><span class="label label-default">4</span></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title">csoport</td>
+                <td class="csapatok">Finnország</td>
+                <td class="points"><span class="label label-default">2.</span></td>
+                <td class="auto-style1">
+                    <select class="form-control seli" id="sel_b2">
+                        <option>Válassz...</option>
+                        <option value="1">Dánia</option>
+                        <option value="2">Finnország</option>
+                        <option value="3">Belgium</option>
+                        <option value="4">Oroszország</option>
+                    </select>
+                </td>
+                <td class="points"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="nyolcadfelirat"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title">&nbsp;</td>
+                <td class="csapatok">Belgium</td>
+                <td class="points"><span class="label label-default">3.</span></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dánia</a></li>
+                            <li><a href="#">Finnország</a></li>
+                            <li><a href="#">Belgium</a></li>
+                            <li><a href="#">Oroszország</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points"><input type="checkbox" class="form-check-input" value=""></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="nyolcadfelirat">F1</td>
+                <td class="Runners">
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows" rowspan="4">
+                    <img src="img/2-2-arrow-png-pic.png"
+                        style="display:block; width:100%; height:20px; transform:rotate(-60deg)" /></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                    </div>
+                </td>
+                <td class="points"><span class="label label-default">4</span></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title line">&nbsp;</td>
+                <td class="csapatok line">Oroszország</td>
+                <td class="points line"><span class="label label-default">4.</span></td>
+                <td class="auto-style1 line">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dánia</a></li>
+                            <li><a href="#">Finnország</a></li>
+                            <li><a href="#">Belgium</a></li>
+                            <li><a href="#">Oroszország</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points line"></td>
+                <td class="points line"><span class="label label-default">2</span></td>
+                <td class="nyolcadfelirat">ABC3</td>
+                <td class="Runners">
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="arrows top">
+                    <img src="img/2-2-arrow-png-pic.png" style="display:block; width:100%; height:20px;" />
+                </td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                    </div>
+                </td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows">
+                </td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="points">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="group_title one"><span class="label label-default">"C"</span></td>
+                <td class="csapatok one">Hollandia</td>
+                <td class="points one"><span class="label label-default">1.</span></td>
+                <td class="auto-style1 one">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Hollandia</a></li>
+                            <li><a href="#">Ukrajna</a></li>
+                            <li><a href="#">Ausztria</a></li>
+                            <li><a href="#">Koszovó</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points one"></td>
+                <td class="points one"><span class="label label-default">2</span></td>
+                <td class="nyolcadfelirat">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="points">&nbsp;</td>
+                <td class="arrows">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="points">&nbsp;</td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows" rowspan="4">
+                    <img src="img/2-2-arrow-png-pic.png"
+                        style="display:block; width:100%; height:20px; transform:rotate(45deg)" /></td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="points">&nbsp;</td>
+                <td class="arrows">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="points">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="group_title one"><span class="label label-default">csoport</span></td>
+                <td class="csapatok one">Ukrajna</td>
+                <td class="points one"><span class="label label-default">2.</span></td>
+                <td class="auto-style1 one">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Hollandia</a></li>
+                            <li><a href="#">Ukrajna</a></li>
+                            <li><a href="#">Ausztria</a></li>
+                            <li><a href="#">Koszovó</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points one"></td>
+                <td class="points one"><span class="label label-default">2</span></td>
+                <td class="nyolcadfelirat">D2</td>
+                <td class="Runners">
+                <td class="points"><span class="label label-default">3</span></td>
+                <td class="arrows bottom">
+                    <img src="img/2-2-arrow-png-pic.png" style="display:block; width:100%; height:20px;" />
+                </td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                    </div>
+                </td>
+
+                <td class="points"><span class="label label-default">0</span></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="auto-style1"><span class="label label-default">Döntő</span></td>
+                <td class="points"></td>
+                <td class="arrows">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="points">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="group_title one"></td>
+                <td class="csapatok one">Ausztria</td>
+                <td class="points one"><span class="label label-default">3.</span></td>
+                <td class="auto-style1 one">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Hollandia</a></li>
+                            <li><a href="#">Ukrajna</a></li>
+                            <li><a href="#">Ausztria</a></li>
+                            <li><a href="#">Koszovó</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points one"><input type="checkbox" class="form-check-input" value=""></td>
+                <td class="points one"><span class="label label-default">2</span></td>
+                <td class="nyolcadfelirat">E2</td>
+                <td class="Runners"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points">&nbsp;</td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points">&nbsp;</td>
+                <td class="auto-style1"></td>
+                <td class="points">&nbsp;</td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="group_title one">&nbsp;</td>
+                <td class="csapatok one">Koszovó</td>
+                <td class="points one"><span class="label label-default">4.</span></td>
+                <td class="auto-style1 one">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Hollandia</a></li>
+                            <li><a href="#">Ukrajna</a></li>
+                            <li><a href="#">Ausztria</a></li>
+                            <li><a href="#">Koszovó</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points one"></td>
+                <td class="points one"><span class="label label-default">2</span></td>
+                <td class="nyolcadfelirat"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="points">&nbsp;</td>
+                <td class="arrows"></td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="points">&nbsp;</td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                    </div>
+                </td>
+
+                <td class="points"><span class="label label-default">5</span></td>
+                <td class="arrows" rowspan="2" style="vertical-align: middle;">
+                    <img src="img/2-2-arrow-png-pic.png" style="display:block; width:100%; height:20px;" />
+                </td>
+
+                <td class="auto-style1" rowspan="2">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                    </div>
+                </td>
+                <td class="points"><span class="label label-default">6</span></td>
+            </tr>
+            <tr>
+                <td class="group_title"><span class="label label-default">"D"</span></td>
+                <td class="csapatok">Anglia</td>
+                <td class="points"><span class="label label-default">1.</span></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Anglia</a></li>
+                            <li><a href="#">Horvátország</a></li>
+                            <li><a href="#">Norvégia</a></li>
+                            <li><a href="#">Csehország</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="nyolcadfelirat"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="points">&nbsp;</td>
+                <td class="arrows"></td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="points">&nbsp;</td>
+                <td class="arrows" rowspan="4">
+                    <img src="img/2-2-arrow-png-pic.png"
+                        style="display:block; width:100%; height:20px; transform:rotate(-60deg)" />
+                </td>
+
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                    </div>
+                </td>
+
+                <td class="points"><span class="label label-default">5</span></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title"><span class="label label-default">csoport</span></td>
+                <td class="csapatok">Horvátország</td>
+                <td class="points"><span class="label label-default">2.</span></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Anglia</a></li>
+                            <li><a href="#">Horvátország</a></li>
+                            <li><a href="#">Norvégia</a></li>
+                            <li><a href="#">Csehország</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="nyolcadfelirat">E1</td>
+                <td class="Runners">Spanyolország</td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="arrows"></td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="points">&nbsp;</td>
+                <td class="arrows"></td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="points">&nbsp;</td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title"></td>
+                <td class="csapatok">Norvégia</td>
+                <td class="points"><span class="label label-default">3.</span></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Anglia</a></li>
+                            <li><a href="#">Horvátország</a></li>
+                            <li><a href="#">Norvégia</a></li>
+                            <li><a href="#">Csehország</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points"><input type="checkbox" class="form-check-input" value=""></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="nyolcadfelirat">ABCD3</td>
+                <td class="Runners"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="arrows top"> <img src="img/2-2-arrow-png-pic.png"
+                        style="display:block; width:100%; height:20px;" />
+                </td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                    </div>
+                </td>
+                <td class="points"><span class="label label-default">3</span></td>
+                <td class="arrows" rowspan="4">
+                    <img src="img/2-2-arrow-png-pic.png"
+                        style="display:block; width:100%; height:20px; transform:rotate(60deg)" />
+                </td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title"></td>
+                <td class="csapatok">Csehország</td>
+                <td class="points"><span class="label label-default">4.</span></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Anglia</a></li>
+                            <li><a href="#">Horvátország</a></li>
+                            <li><a href="#">Norvégia</a></li>
+                            <li><a href="#">Csehország</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="nyolcadfelirat"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1">
+                </td>
+                <td class="points"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title"><span class="label label-default">"E"</span></td>
+                <td class="csapatok">Spanyolország</td>
+                <td class="points"><span class="label label-default">1.</span></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Spanyolország</a></li>
+                            <li><a href="#">Svédország</a></li>
+                            <li><a href="#">Lengyelország</a></li>
+                            <li><a href="#">Bosznia</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points"></td>
+                <td class="points"><span class="label label-default">1</span></td>
+                <td class="nyolcadfelirat">D1</td>
+                <td class="Runners"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="arrows bottom"> <img src="img/2-2-arrow-png-pic.png"
+                        style="display:block; width:100%; height:20px;" />
+                </td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                    </div>
+                </td>
+                <td class="points"><span class="label label-default">3</span></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title"><span class="label label-default">csoport</span></td>
+                <td class="csapatok">Svédország</td>
+                <td class="points"><span class="label label-default">2.</span></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Spanyolország</a></li>
+                            <li><a href="#">Svédország</a></li>
+                            <li><a href="#">Lengyelország</a></li>
+                            <li><a href="#">Bosznia</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points"></td>
+                <td class="points"><span class="label label-default">1</span></td>
+                <td class="nyolcadfelirat">F2</td>
+                <td class="Runners"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                    </div>
+                </td>
+                <td class="points"><span class="label label-default">4</span></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title"></td>
+                <td class="csapatok">Lengyelország</td>
+                <td class="points"><span class="label label-default">3.</span></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Spanyolország</a></li>
+                            <li><a href="#">Svédország</a></li>
+                            <li><a href="#">Lengyelország</a></li>
+                            <li><a href="#">Bosznia</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points"><input type="checkbox" class="form-check-input" value=""></td>
+                <td class="points"><span class="label label-default">1</span></td>
+                <td class="nyolcadfelirat"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title"></td>
+                <td class="csapatok">Bosznia</td>
+                <td class="points"><span class="label label-default">4.</span></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Spanyolország</a></li>
+                            <li><a href="#">Svédország</a></li>
+                            <li><a href="#">Lengyelország</a></li>
+                            <li><a href="#">Bosznia</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points"></td>
+                <td class="points"><span class="label label-default">1</span></td>
+                <td class="nyolcadfelirat">C1</td>
+                <td class="Runners"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows" rowspan="4">
+                    <img src="img/2-2-arrow-png-pic.png"
+                        style="display:block; width:100%; height:20px; transform:rotate(-60deg)" />
+                </td>
+
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                    </div>
+                </td>
+                <td class="points"><span class="label label-default">4</span></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title"><span class="label label-default">"F"</span></td>
+                <td class="csapatok">Magyarország</td>
+                <td class="points"><span class="label label-default">1.</span></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Magyarország</a></li>
+                            <li><a href="#">Portugália</a></li>
+                            <li><a href="#">Franciaország</a></li>
+                            <li><a href="#">Németország</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points"></td>
+                <td class="points"><span class="label label-default">1</span></td>
+                <td class="nyolcadfelirat">DEF3</td>
+                <td class="Runners"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="arrows top">
+                    <img src="img/2-2-arrow-png-pic.png"
+                        style="display:block; width:100%; height:20px; transform:rotate(0deg)" />
+                </td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                    </div>
+                </td>
+                <td class="points"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title"><span class="label label-default">csoport</span></td>
+                <td class="csapatok">Portugália</td>
+                <td class="points"><span class="label label-default">2.</span></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Magyarország</a></li>
+                            <li><a href="#">Portugália</a></li>
+                            <li><a href="#">Franciaország</a></li>
+                            <li><a href="#">Németország</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points"></td>
+                <td class="points"><span class="label label-default">1</span></td>
+                <td class="nyolcadfelirat"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title"></td>
+                <td class="csapatok">Franciaország</td>
+                <td class="points"><span class="label label-default">3.</span></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Magyarország</a></li>
+                            <li><a href="#">Portugália</a></li>
+                            <li><a href="#">Franciaország</a></li>
+                            <li><a href="#">Németország</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points"><input type="checkbox" class="form-check-input" value=""></td>
+                <td class="points"><span class="label label-default">1</span></td>
+                <td class="nyolcadfelirat">A2</td>
+                <td class="Runners"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="arrows bottom">
+                    <img src="img/2-2-arrow-png-pic.png"
+                        style="display:block; width:100%; height:20px; transform:rotate(0deg)" />
+                </td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                    </div>
+                </td>
+                <td class="points"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+            <tr>
+                <td class="group_title"></td>
+                <td class="csapatok">Németország</td>
+                <td class="points"><span class="label label-default">4.</span></td>
+                <td class="auto-style1">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Válassz..
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Magyarország</a></li>
+                            <li><a href="#">Portugália</a></li>
+                            <li><a href="#">Franciaország</a></li>
+                            <li><a href="#">Németország</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="points"></td>
+                <td class="points"><span class="label label-default">1</span></td>
+                <td class="nyolcadfelirat">B2</td>
+                <td class="Runners"></td>
+                <td class="points"><span class="label label-default">2</span></td>
+                <td class="arrows bottom"></td>
+                <td class="auto-style1">
+                </td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+                <td class="arrows"></td>
+                <td class="auto-style1"></td>
+                <td class="points"></td>
+            </tr>
+
+
+    </div>
 </body>
+
 </html>
